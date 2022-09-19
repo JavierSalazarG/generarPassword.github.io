@@ -1,0 +1,344 @@
+body {
+    background-color: #18171F;
+}
+
+
+.passwordGenerator {
+    width: 540px;
+    height: 250px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: Arial, monospace;
+    color: #817D92;
+    font-size: 24px;
+
+}
+
+.textAndImg {
+    width: 540px;
+    height: 80px;
+    background-color: #24232C;
+    display: flex;
+    flex-direction: row;
+}
+
+#textPassword {
+    height: 60px;
+    width: 450px;
+    background-color: #24232C;
+    color: #E6E5EA;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: initial;
+    border: none;
+    margin: auto;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.textAndImg #copy {
+    display: none;
+    position: relative;
+    top: -45px;
+    left: 55px;
+    background-color: #817D92;
+    width: 50px;
+    height: 40px;
+    color: #E6E5EA;
+    border-radius: 10px;
+
+}
+
+
+.textAndImg #copiar {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-right: 15px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.textAndImg img {
+    width: 40px;
+    text-align: center;
+    background-color: #24232C;
+}
+
+.textAndImg img:hover {
+    transform: scale(1.05);
+}
+
+.selectPassword {
+    display: flex;
+    flex-direction: column;
+    color: #E6E5EA;
+    text-align: left;
+    background-color: #24232C;
+    margin-top: 25px;
+    padding: 25px;
+    padding-bottom: 0;
+
+}
+
+.selectPassword p label {
+    font-size: 18px;
+
+}
+
+label {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*Barra Rango*/
+input[type=range] {
+    width: 100%;
+    margin-top: 15px;
+    height: 25px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+    background-color: #24232C;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #A4FFAF;
+    border-radius: 1px;
+    border: 0px solid #000000;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid #2FBA25;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #A4FFAF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #A4FFAF;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #A4FFAF;
+    border-radius: 1px;
+    border: 0px solid #000000;
+}
+
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid #2FBA25;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #A4FFAF;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #A4FFAF;
+    border: 0px solid #000000;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px #000000;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #A4FFAF;
+    border: 0px solid #000000;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px #000000;
+}
+
+input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid #2FBA25;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #A4FFAF;
+    cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #A4FFAF;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #A4FFAF;
+}
+
+/*FIN RANGE*/
+
+/*Edit Checkbox*/
+
+input[type="checkbox"]+label:before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    float: left;
+    margin: 0.5em 0.5em 0 0;
+    border: 2px solid #ccc;
+    background: #fff;
+}
+
+
+
+input[type="checkbox"]:checked+label:before {
+    border-color: #A4FFAF;
+    background-color: #A4FFAF;
+}
+
+input[type="checkbox"]:checked+label:after {
+    content: "";
+    width: 12px;
+    height: 6px;
+    border: 4px solid #A4FFAF;
+    float: left;
+    margin-left: -1.95em;
+    border-right: 0;
+    border-top: 0;
+    margin-top: 1em;
+    transform: rotate(-55deg);
+}
+
+input[type="checkbox"]:checked+label:after {
+    content: "";
+    width: 14px;
+    height: 8px;
+    border: 4px solid #171717;
+    float: left;
+    margin-left: -1.95em;
+    border-right: 0;
+    border-top: 0;
+    margin-top: 1em;
+    transform: rotate(-55deg);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+CSS input[type="checkbox"]+label {
+    font-weight: bold;
+    line-height: 3em;
+    color: #ccc;
+}
+
+input[type="checkbox"]:checked+label {
+    color: #A4FFAF;
+}
+
+input[type="checkbox"]+label {
+    font-weight: bold;
+    line-height: 3em;
+    color: #ccc;
+}
+
+input[type="checkbox"]:checked+label {
+    color: #A4FFAF;
+}
+
+/*Fin CHeckbox*/
+
+.difyAndInput {
+    background-color: #24232C;
+    padding: 25px;
+}
+
+.dificulty {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #18171F;
+    width: 476px;
+    height: 75px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#idiculty {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#textDificulty {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 80px;
+}
+
+.nivelDificulty {
+    display: flex;
+    flex-direction: row;
+}
+
+.box_dificulty {
+    width: 20px;
+    height: 60px;
+    margin-top: 5px;
+    border: 1px solid #A4FFAF;
+    margin-left: 5px;
+}
+
+#crear {
+    border: none;
+    width: 476px;
+    height: 65px;
+    background-color: #A4FFAF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#crear:hover {
+    transform: scale(1.05);
+}

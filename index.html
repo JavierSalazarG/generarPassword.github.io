@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Password generator app</title>
+</head>
+
+<body>
+
+  <div class="passwordGenerator">
+    <form action="#" id="passwords" name="passwords">
+
+      <h1>Password Generator</h1>
+
+      <div class="textAndImg">
+        <p id="textPassword"></p>
+        <span id="copy">copy!</span>
+        <span id="copiar" onclick="copiarAlPortapapeles('textPassword')""><img src=" assets/images/icon-copy.svg"
+          alt="copy"></span>
+      </div>
+
+
+      <div class="selectPassword">
+        <p>
+          <label for="range">Longitud del carácter</label><br>
+          <input type="range" name="range" min="4" max="20" id="range">
+        </p>
+        <p>
+          <input type="checkbox" name="mayus" id="mayus">
+          <label for="mayus">Incluir letras mayúsculas</label><br>
+
+          <input type="checkbox" name="minus" id="minus">
+          <label for="minus">Incluir letras minusculas</label><br>
+
+          <input type="checkbox" name="num" id="num">
+          <label for="num">Incluir numeros</label><br>
+
+          <input type="checkbox" name="simb" id="simb">
+          <label for="simb">Incluir simbolos</label><br>
+
+        </p>
+      </div>
+
+      <div class="difyAndInput">
+
+        <div class="dificulty">
+          <p id="idiculty">DIFICULTAD</p>
+          <P id="textDificulty">Facil</P>
+          <div class="nivelDificulty">
+            <div id="muy_facil" class="box_dificulty"></div>
+            <div id="normal" class="box_dificulty"></div>
+            <div id="dificil" class="box_dificulty"></div>
+            <div id="muy_dificil" class="box_dificulty"></div>
+          </div>
+        </div>
+        <input id="crear" type="button" onclick="display_String_aleatorio(), difiultad()" value="GENERAR">
+      </div>
+
+    </form>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
